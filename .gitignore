@@ -1,1 +1,6 @@
-/Users/tilakpatel/Desktop/horizonai/horizonai/chatbot/secret.env
+build/
+install/
+log/
+*.pyc
+__pycache__/
+.pytest_cache/
