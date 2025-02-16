@@ -75,7 +75,7 @@ export default function LandingPage() {
                 className="space-x-8"
               >
                 <Link 
-                  to="/solutions" 
+                  to="/products" 
                   className="inline-flex items-center gap-3 px-8 py-4 
                          bg-gradient-to-r from-blue-600 to-blue-700
                          hover:from-blue-700 hover:to-blue-800
