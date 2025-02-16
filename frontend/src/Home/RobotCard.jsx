@@ -48,7 +48,7 @@ export function RobotCard({ robot, index, isInView, img }) {
               ))}
             </div>
 
-            <Link to="/Solutions">
+            <Link to="/products">
               <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
