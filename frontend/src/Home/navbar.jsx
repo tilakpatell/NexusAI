@@ -42,17 +42,6 @@ export default function Navbar() {
                                                       transition-colors">
                                 Solutions
                             </Link>
-                            <Link to="/about" className="text-gray-600 dark:text-gray-300 
-                                                   hover:text-blue-600 dark:hover:text-blue-400 
-                                                   transition-colors">
-                                About
-                            </Link>
-                            <Link to="/contact" className="text-gray-600 dark:text-gray-300
-                                                     hover:text-blue-600 dark:hover:text-blue-400
-                                                     transition-colors">
-                                Contact
-                            </Link>
-
                             {loginHappened ? (
                                 <div className={`flex items-center gap-3 ${isDark ? 'text-white' : 'text-black'}`}
                                      onClick={handleProfileClick}>
