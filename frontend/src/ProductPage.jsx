@@ -1,14 +1,10 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import {
     Box,
-    Cpu,
     Shield,
     Workflow,
     ChevronRight,
-    Terminal,
     Database,
-    Cog,
     Star
 } from 'lucide-react';
 
