@@ -4,13 +4,22 @@
      "userId": 1,
      "username": "johndoe",
      "password": "whatever",
-     "name": "John Doe"
+     "name": "John Doe",
+     "purchased": []
    },
    {
     "userId": 2,
      "username": "emilydoe",
      "password": "nathan_sucks",
-     "name": "Emily Doe"
+     "name": "Emily Doe",
+     "purchased": []
+   },
+   {
+     "userId": 3,
+     "username": "georgeRocks",
+     "password": "dickansh",
+     "name": "George Wimberly",
+     "purchased": []
    }
   ]
 }

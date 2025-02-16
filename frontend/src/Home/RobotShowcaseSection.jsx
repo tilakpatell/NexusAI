@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Box, Factory, Settings } from 'lucide-react';
 import { RobotCard } from './RobotCard';
+import Robot1Image from '../images/UGV-Rover-details-23.jpg';
 
 export function RobotShowcaseSection() {
   const ref = useRef();
@@ -13,7 +14,7 @@ export function RobotShowcaseSection() {
       name: "Atlas Pro",
       type: "Industrial Robot",
       description: "Heavy-duty manufacturing and assembly robot with precise control",
-      video: "/videos/atlas-pro.mp4",
+      img: "https://www.waveshare.com/img/devkit/accBoard/UGV-Rover/UGV-Rover-details-23.jpg",
       icon: <Box className="w-6 h-6" />,
       specs: ["Payload: 500kg", "Precision: 0.1mm", "Reach: 2.5m"]
     },
@@ -21,7 +22,7 @@ export function RobotShowcaseSection() {
       name: "Nexus Scout",
       type: "Autonomous Mobile Robot",
       description: "Intelligent navigation and mapping for warehouse operations",
-      video: "/videos/nexus-scout.mp4",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9P7jRU8tfVaM5BCMzt18BWTiUqMJkpvnHA&s",
       icon: <Factory className="w-6 h-6" />,
       specs: ["Speed: 2m/s", "Battery: 12h", "Payload: 200kg"]
     },
@@ -29,7 +30,7 @@ export function RobotShowcaseSection() {
       name: "Quantum Series",
       type: "Collaborative Robot",
       description: "Advanced human-robot collaboration with AI-powered safety",
-      video: "/videos/quantum-series.mp4",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRipo8JU4ZOi30_FtpoMN78wfPQXvGkSUMj3Q&s",
       icon: <Settings className="w-6 h-6" />,
       specs: ["Safety Rated", "Force Sensing", "Easy Programming"]
     }
@@ -58,6 +59,7 @@ export function RobotShowcaseSection() {
               robot={robot} 
               index={index} 
               isInView={isInView}
+              img={robot.img}
             />
           ))}
         </div>

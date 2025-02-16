@@ -1,7 +1,8 @@
+
 {
   "products": [
     {
-      "category": "Hardware",
+      "category": "Robot",
       "items": [
         {
           "id": "atlas-pro",
@@ -9,6 +10,7 @@
           "tagline": "Advanced Autonomous Industrial Robot",
           "description": "The Atlas Pro represents the pinnacle of industrial automation, combining advanced AI capabilities with precise mechanical control. Designed for complex manufacturing and warehouse operations, it delivers unprecedented efficiency and adaptability.",
           "price": "$75,000",
+          "img": "https://www.waveshare.com/img/devkit/accBoard/UGV-Rover/UGV-Rover-details-23.jpg",
           "specs": [
             {
               "label": "Payload",
@@ -43,6 +45,10 @@
             {
               "title": "Smart Integration",
               "description": "Seamless connectivity with existing industrial systems"
+            },
+            {
+              "title": "Software",
+              "description": "Store Bot"
             }
           ]
         },
@@ -52,6 +58,7 @@
           "tagline": "Intelligent Security Robot",
           "description": "The Sentinel X combines advanced surveillance capabilities with autonomous patrol functions. Perfect for securing large facilities and monitoring critical infrastructure with 24/7 reliability.",
           "price": "$65,000",
+          "img": "../images/UGV-Rover-details-23.jpg",
           "specs": [
             {
               "label": "Vision",
@@ -86,6 +93,10 @@
             {
               "title": "Emergency Response",
               "description": "Integrated alert system with command center link"
+            },
+            {
+              "title": "Software",
+              "description": "Threat Detection and Store Bot"
             }
           ]
         }
@@ -100,6 +111,7 @@
           "tagline": "Enterprise Automation System",
           "description": "Enterprise automation operating system with advanced AI",
           "price": "$2,500/mo",
+          "img": "../images/UGV-Rover-details-23.jpg",
           "specs": [
             {
               "label": "Processing",
@@ -143,6 +155,7 @@
           "tagline": "Advanced Security Suite",
           "description": "Security and threat detection software suite",
           "price": "$1,800/mo",
+          "img": "../images/UGV-Rover-details-23.jpg",
           "specs": [
             {
               "label": "Detection",

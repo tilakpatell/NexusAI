@@ -4,32 +4,33 @@ import {
     Star
 } from 'lucide-react';
 import ProductBackground from "./ProductBackground.jsx";
-
-import {useState} from "react";
+import { useState } from "react";
 import ProductDetailModal from "./Product/ProductDetailModal.jsx";
 import GetProduct from "./GetProduct.jsx";
+import PropTypes from 'prop-types';
 
-
+ProductDetailModal.propTypes = {
+    isOpen: PropTypes.bool.isRequired,
+    onClose: PropTypes.func.isRequired,
+    productId: PropTypes.string.isRequired
+};
 
 const ProductsPage = () => {
-
     const products = GetProduct();
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [productId, setProductId] = useState(0);
+    const [productId, setProductId] = useState('');
 
     return (
         <div className="min-h-screen overflow-hidden">
-
             <ProductDetailModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
                 productId={productId}
             />
 
-            <ProductBackground/>
+            <ProductBackground />
 
             <div className="relative z-10 container mx-auto px-4 py-24">
-                {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -43,7 +44,6 @@ const ProductsPage = () => {
                     </p>
                 </motion.div>
 
-                {/* Product Categories */}
                 {products.map((category) => (
                     <div key={category.category} className="mb-16">
                         <motion.h2
@@ -58,21 +58,21 @@ const ProductsPage = () => {
                         <div className="grid md:grid-cols-2 gap-8">
                             {category.items.map((product, productIndex) => (
                                 <motion.div
-                                    key={product.name}
+                                    key={product.id || product.name}
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: productIndex * 0.1 }}
                                     className="relative bg-white/80 dark:bg-black/80 backdrop-blur-md rounded-lg
-                                             border border-gray-200/20 dark:border-white/10
-                                             hover:border-blue-500/50 dark:hover:border-blue-500/50
-                                             transition-all duration-300"
+                                            border border-gray-200/20 dark:border-white/10
+                                            hover:border-blue-500/50 dark:hover:border-blue-500/50
+                                            transition-all duration-300"
                                 >
                                     <div className="p-8">
                                         <div className="flex justify-between items-start mb-6">
                                             <div className="text-blue-600 dark:text-blue-400">{product.icon}</div>
                                             <div className="px-3 py-1 rounded-full text-sm font-medium
-                                                          border border-blue-600/20 dark:border-blue-400/20
-                                                          text-blue-600 dark:text-blue-400">
+                                                         border border-blue-600/20 dark:border-blue-400/20
+                                                         text-blue-600 dark:text-blue-400">
                                                 {product.price}
                                             </div>
                                         </div>
@@ -91,13 +91,15 @@ const ProductsPage = () => {
                                             ))}
                                         </div>
                                         <div className="mt-8">
-                                            <button className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg
-                                                           hover:bg-blue-700 dark:hover:bg-blue-500
-                                                           transition-colors flex items-center justify-center gap-2"
-                                                    onClick={() => {setIsModalOpen(true)
-                                                        setProductId(product.id);
-
-                                                    }}>
+                                            <button
+                                                className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg
+                                                        hover:bg-blue-700 dark:hover:bg-blue-500
+                                                        transition-colors flex items-center justify-center gap-2"
+                                                onClick={() => {
+                                                    setIsModalOpen(true);
+                                                    setProductId(product.id);
+                                                }}
+                                            >
                                                 Learn More
                                                 <ChevronRight className="w-4 h-4" />
                                             </button>
@@ -111,6 +113,10 @@ const ProductsPage = () => {
             </div>
         </div>
     );
+};
+
+ProductBackground.propTypes = {
+    // Add props based on what ProductBackground component needs
 };
 
 export default ProductsPage;

@@ -14,9 +14,9 @@ export function TestimonialsSection() {
       image: "/sarah-chen.jpg"
     },
     {
-      quote: "The most reliable and innovative thing is penis and i love it in me. When I see the cock i just wanna bust everywhere and love it down my throat.",
-      author: "Dickansh Muppasani",
-      role: "Chief Penis Officer",
+      quote: "These robots give very reliable service and are trained really well. They have helped customers in my store when a lot of my employees were busy.",
+      author: "Eekansh Muppasani",
+      role: "Chief Officer, Walmart",
       image: "https://media.licdn.com/dms/image/v2/D4E03AQF8PeNTcTX6eg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1726893492363?e=1745452800&v=beta&t=X76b8_xBsCKmc270terbNjirfw4P_ITb0um0JZP4phw"
     },
     {

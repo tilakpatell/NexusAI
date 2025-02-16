@@ -26,6 +26,7 @@ export default function GetProduct() {
                     tagline: "Advanced Autonomous Industrial Robot",
                     description: "The Atlas Pro represents the pinnacle of industrial automation, combining advanced AI capabilities with precise mechanical control. Designed for complex manufacturing and warehouse operations, it delivers unprecedented efficiency and adaptability.",
                     price: "$75,000",
+                    img: "https://www.waveshare.com/img/devkit/accBoard/UGV-Rover/UGV-Rover-details-23.jpg",
                     specs: [
                         { icon: <Weight className="w-5 h-5" />, label: "Payload", value: "20kg maximum capacity" },
                         { icon: <Battery className="w-5 h-5" />, label: "Battery Life", value: "12 hours continuous operation" },
@@ -48,6 +49,10 @@ export default function GetProduct() {
                         {
                             title: "Smart Integration",
                             description: "Seamless connectivity with existing industrial systems"
+                        },
+                        {
+                            title: "Software",
+                            description: "Store Bot"
                         }
                     ]
                 },
@@ -58,6 +63,7 @@ export default function GetProduct() {
                     tagline: "Intelligent Security Robot",
                     description: "The Sentinel X combines advanced surveillance capabilities with autonomous patrol functions. Perfect for securing large facilities and monitoring critical infrastructure with 24/7 reliability.",
                     price: "$65,000",
+                    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9P7jRU8tfVaM5BCMzt18BWTiUqMJkpvnHA&s",
                     specs: [
                         { icon: <Eye className="w-5 h-5" />, label: "Vision", value: "360° 4K cameras" },
                         { icon: <Battery className="w-5 h-5" />, label: "Battery Life", value: "16 hours patrol" },
@@ -80,6 +86,10 @@ export default function GetProduct() {
                         {
                             title: "Emergency Response",
                             description: "Integrated alert system with command center link"
+                        },
+                        {
+                            title: "Software",
+                            description: "Store Bot and Threat Detection",
                         }
                     ]
                 }
@@ -95,6 +105,7 @@ export default function GetProduct() {
                     tagline: "Enterprise Automation System",
                     description: "Enterprise automation operating system with advanced AI",
                     price: "$2,500/mo",
+                    img: "https://i.pcmag.com/imagery/articles/06Vi8cksaoU4C1eOEsLmQFy-1..v1569484321.jpg",
                     specs: [
                         { icon: <Cpu className="w-5 h-5" />, label: "Processing", value: "Real-time AI" },
                         { icon: <Network className="w-5 h-5" />, label: "Integration", value: "Universal API" },
@@ -127,6 +138,7 @@ export default function GetProduct() {
                     tagline: "Advanced Security Suite",
                     description: "Security and threat detection software suite",
                     price: "$1,800/mo",
+                    img: "https://learn.microsoft.com/training/achievements/secure-software-development-as-part-of-a-cybersecurity-solution-social.png",
                     specs: [
                         { icon: <Eye className="w-5 h-5" />, label: "Detection", value: "AI-powered" },
                         { icon: <Brain className="w-5 h-5" />, label: "Learning", value: "Adaptive" },

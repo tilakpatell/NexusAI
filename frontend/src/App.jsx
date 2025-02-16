@@ -8,7 +8,7 @@ import {ThemeProvider} from './Home/ThemeContext';
 import {AuthProvider} from "./GlobalVariables/AuthContext.jsx";
 import {UserProvider} from "./GlobalVariables/UserContext.jsx";
 import UserHome from "./Home/UserPortal/UserHome.jsx";
-import ManageRobot from "./Home/UserPortal/ManageRobot.jsx";
+import {ManageRobot} from "./Home/UserPortal/ManageRobot.jsx";
 
 function App() {
     return (
