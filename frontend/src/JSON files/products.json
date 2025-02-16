@@ -1,0 +1,186 @@
+{
+  "products": [
+    {
+      "category": "Hardware",
+      "items": [
+        {
+          "id": "atlas-pro",
+          "name": "Atlas Pro",
+          "tagline": "Advanced Autonomous Industrial Robot",
+          "description": "The Atlas Pro represents the pinnacle of industrial automation, combining advanced AI capabilities with precise mechanical control. Designed for complex manufacturing and warehouse operations, it delivers unprecedented efficiency and adaptability.",
+          "price": "$75,000",
+          "specs": [
+            {
+              "label": "Payload",
+              "value": "20kg maximum capacity"
+            },
+            {
+              "label": "Battery Life",
+              "value": "12 hours continuous operation"
+            },
+            {
+              "label": "Processor",
+              "value": "Neural Engine X12"
+            },
+            {
+              "label": "Safety",
+              "value": "ISO 13482 Certified"
+            }
+          ],
+          "features": [
+            {
+              "title": "Precision Control",
+              "description": "Sub-millimeter accuracy with advanced force feedback systems"
+            },
+            {
+              "title": "Dynamic Balance",
+              "description": "Real-time stability adjustment for uneven surfaces and varying loads"
+            },
+            {
+              "title": "AI Learning",
+              "description": "Continuous operation optimization through machine learning"
+            },
+            {
+              "title": "Smart Integration",
+              "description": "Seamless connectivity with existing industrial systems"
+            }
+          ]
+        },
+        {
+          "id": "sentinel-x",
+          "name": "Sentinel X",
+          "tagline": "Intelligent Security Robot",
+          "description": "The Sentinel X combines advanced surveillance capabilities with autonomous patrol functions. Perfect for securing large facilities and monitoring critical infrastructure with 24/7 reliability.",
+          "price": "$65,000",
+          "specs": [
+            {
+              "label": "Vision",
+              "value": "360° 4K cameras"
+            },
+            {
+              "label": "Battery Life",
+              "value": "16 hours patrol"
+            },
+            {
+              "label": "AI Core",
+              "value": "Security Neural Net"
+            },
+            {
+              "label": "Range",
+              "value": "2km operational"
+            }
+          ],
+          "features": [
+            {
+              "title": "Autonomous Patrol",
+              "description": "AI-driven patrol routes with dynamic adjustment"
+            },
+            {
+              "title": "Threat Detection",
+              "description": "Real-time analysis of potential security threats"
+            },
+            {
+              "title": "Environmental Monitoring",
+              "description": "Sensors for temperature, air quality, and hazards"
+            },
+            {
+              "title": "Emergency Response",
+              "description": "Integrated alert system with command center link"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Software",
+      "items": [
+        {
+          "id": "neural-os",
+          "name": "Neural OS",
+          "tagline": "Enterprise Automation System",
+          "description": "Enterprise automation operating system with advanced AI",
+          "price": "$2,500/mo",
+          "specs": [
+            {
+              "label": "Processing",
+              "value": "Real-time AI"
+            },
+            {
+              "label": "Integration",
+              "value": "Universal API"
+            },
+            {
+              "label": "Security",
+              "value": "Enterprise-grade"
+            },
+            {
+              "label": "Performance",
+              "value": "High throughput"
+            }
+          ],
+          "features": [
+            {
+              "title": "Real-time Processing",
+              "description": "Advanced real-time data processing and analysis"
+            },
+            {
+              "title": "Multi-unit Control",
+              "description": "Centralized control for multiple robot units"
+            },
+            {
+              "title": "Cloud Integration",
+              "description": "Seamless cloud connectivity and data sync"
+            },
+            {
+              "title": "24/7 Support",
+              "description": "Round-the-clock technical assistance"
+            }
+          ]
+        },
+        {
+          "id": "securebot-guard",
+          "name": "SecureBot Guard",
+          "tagline": "Advanced Security Suite",
+          "description": "Security and threat detection software suite",
+          "price": "$1,800/mo",
+          "specs": [
+            {
+              "label": "Detection",
+              "value": "AI-powered"
+            },
+            {
+              "label": "Learning",
+              "value": "Adaptive"
+            },
+            {
+              "label": "Coverage",
+              "value": "Full perimeter"
+            },
+            {
+              "label": "Response",
+              "value": "Automated"
+            }
+          ],
+          "features": [
+            {
+              "title": "Threat Detection",
+              "description": "Advanced AI-driven threat recognition"
+            },
+            {
+              "title": "Perimeter Control",
+              "description": "Comprehensive facility security management"
+            },
+            {
+              "title": "Incident Response",
+              "description": "Automated security incident handling"
+            },
+            {
+              "title": "Access Management",
+              "description": "Sophisticated access control system"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
