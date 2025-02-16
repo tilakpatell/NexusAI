@@ -1,13 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from './ThemeContext';
 import { ThemeToggle } from './ThemeToggle';
+import {useAuth} from "../GlobalVariables/AuthContext.jsx";
+import { CircleUser } from 'lucide-react';
+import { useUser } from "../GlobalVariables/UserContext.jsx";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const { isDark } = useTheme();
+    const { loginHappened: loginHappened } = useAuth();
+    const {currentUser} = useUser()
+    const navigate = useNavigate();
+
+    const handleProfileClick = () => {
+        navigate('/UserHome');
+    }
 
     return (
         <>
@@ -37,18 +47,28 @@ export default function Navbar() {
                                                    transition-colors">
                                 About
                             </Link>
-                            <Link to="/contact" className="text-gray-600 dark:text-gray-300 
-                                                     hover:text-blue-600 dark:hover:text-blue-400 
+                            <Link to="/contact" className="text-gray-600 dark:text-gray-300
+                                                     hover:text-blue-600 dark:hover:text-blue-400
                                                      transition-colors">
                                 Contact
                             </Link>
-                            <Link to="/signin" className="px-4 py-2 rounded-lg 
-                                                    bg-blue-600 text-white 
-                                                    hover:bg-blue-700 
-                                                    transition-colors">
-                                Sign in
-                            </Link>
+
+                            {loginHappened ? (
+                                <div className={`flex items-center gap-3 ${isDark ? 'text-white' : 'text-black'}`}
+                                     onClick={handleProfileClick}>
+                                    <CircleUser />
+                                    <p>Hello {currentUser?.name}!</p>
+                                </div>
+                            ) : (
+                                <Link
+                                    to="/signin"
+                                    className="px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+                                >
+                                    Sign in
+                                </Link>
+                            )}
                             <ThemeToggle />
+
                         </div>
 
                         {/* Mobile Menu Button */}
@@ -87,7 +107,7 @@ export default function Navbar() {
                                                       text-gray-600 dark:text-gray-300
                                                       hover:bg-gray-100 dark:hover:bg-white/10
                                                       transition-colors">
-                                Products
+                                Solutions
                             </Link>
                             <Link to="/about" className="block px-4 py-2 rounded-lg
                                                    text-gray-600 dark:text-gray-300
