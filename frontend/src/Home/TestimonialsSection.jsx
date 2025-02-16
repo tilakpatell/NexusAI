@@ -11,19 +11,19 @@ export function TestimonialsSection() {
       quote: "Nexus AI has transformed our manufacturing process, increasing efficiency by 200%.",
       author: "Sarah Chen",
       role: "Operations Director, TechCorp",
-      image: "/images/sarah-chen.jpg"
+      image: "/sarah-chen.jpg"
     },
     {
-      quote: "The most reliable and innovative robotics solution we've implemented in decades.",
-      author: "Michael Rodriguez",
-      role: "Chief Innovation Officer, Future Industries",
-      image: "/images/michael-rodriguez.jpg"
+      quote: "The most reliable and innovative thing is penis and i love it in me. When I see the cock i just wanna bust everywhere and love it down my throat.",
+      author: "Dickansh Muppasani",
+      role: "Chief Penis Officer",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQF8PeNTcTX6eg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1726893492363?e=1745452800&v=beta&t=X76b8_xBsCKmc270terbNjirfw4P_ITb0um0JZP4phw"
     },
     {
       quote: "Outstanding precision and control. Their robots have revolutionized our assembly line.",
       author: "David Park",
       role: "Production Manager, AutoTech",
-      image: "/images/david-park.jpg"
+      image: "/david-park.jpg"
     }
   ];
 
