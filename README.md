@@ -1,1 +1,1 @@
-# horizonai
+# nexusai
